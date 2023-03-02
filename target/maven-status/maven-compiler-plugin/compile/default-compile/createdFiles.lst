@@ -1,0 +1,5 @@
+com\sauceLabPages\SauceLabHomePage.class
+com\sauceLabPages\CheckoutReviewPage.class
+org\example\Main.class
+com\sauceLabPages\CheckoutPage.class
+com\sauceLabPages\LoginPage.class

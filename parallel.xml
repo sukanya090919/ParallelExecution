@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <parameter name="browserName" value="edge"></parameter>
+    <test verbose="2" preserve-order="true" name="C:/Users/Sukanya Kumari/IdeaProjects/SauceLabTestNGFramework">
+<!--        <parameter name="username" value="problem_user"></parameter>-->
+<!--        <parameter name="password" value="secret_sauce"></parameter>-->
+        <classes>
+            <class name="com.SauceLabTest.SauceLabTestPage">
+            <methods>
+                <include name="loginIntoApplicationUsingProblemUser"/>
+                <include name="loginIntoApplicationUsingStandardUser"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/Sukanya Kumari/IdeaProjects/SauceLabTestNGFramework/chrome">
+        <parameter name="browserName" value="chrome"></parameter>
+<!--        <parameter name="username" value="standard_user"></parameter>-->
+<!--        <parameter name="password" value="secret_sauce"></parameter>-->
+        <classes>
+            <class name="com.SauceLabTest.SauceLabTestPage">
+                <methods>
+                    <include name="loginIntoApplicationUsingProblemUser"/>
+                    <include name="loginIntoApplicationUsingStandardUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
